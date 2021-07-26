@@ -25,7 +25,7 @@ import api.teste.Testando.config.KafkaConfig;
 		
 		public void publish(String string) {
 			LOG.info("Sending '{}' to topic = '{}' ",string,appConfig.getOutputKafkaTopic());
-			Message<String> message=MessageBuilder.withPayload(string).setHeader(KafkaHeaders.TOPIC, appConfig.getOutputKafkaTopic()).build();
+			Message<String> message=MessageBuilder.withPayload(string).setHeader(KafkaHeaders.TOPIC, "company").build();
 			kafkaTemplate.send(message);
 		}
 		

@@ -21,7 +21,5 @@ public class KafkaTopicConfig {
 	
 	@Value("${app.output-kafka-topic-company}")
 	private String outputKafkaTopicCompany;
-	
-	@Value("${app.output-kafka-topic-pack}")
-	private String outputKafkaTopicPack;
 }
+
